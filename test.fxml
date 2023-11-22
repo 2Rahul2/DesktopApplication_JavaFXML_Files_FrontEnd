@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0" prefWidth="806.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.hellofx.homepage">
+   <top>
+      <ToolBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="89.0" prefWidth="806.0" style="-fx-background-color: #1e1729;" BorderPane.alignment="CENTER">
+        <items>
+          <Button fx:id="testButton" mnemonicParsing="false" text="Button" />
+        </items>
+      </ToolBar>
+   </top>
+   <left>
+      <VBox alignment="CENTER" prefHeight="430.0" prefWidth="366.0" style="-fx-background-color: #1e1729;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="addBackUp" mnemonicParsing="false" prefHeight="59.0" prefWidth="270.0" style="-fx-background-color: #5c427d; -fx-text-fill: white;" text="Add Backup Path">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="FontAwesome Regular" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow height="18.0" radius="8.5" width="18.0">
+                     <color>
+                        <Color red="0.24313725531101227" green="0.16470588743686676" blue="0.3176470696926117" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <Button fx:id="yourBackUp" layoutX="20.0" layoutY="35.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="270.0" style="-fx-background-color: #5c427d; -fx-text-fill: white;" text="View Your BackUp">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="FontAwesome Regular" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow height="18.0" radius="8.5" width="18.0">
+                     <color>
+                        <Color red="0.24313725531101227" green="0.16470588743686676" blue="0.3176470696926117" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <Button fx:id="EditBackUp" layoutX="10.0" layoutY="104.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="270.0" style="-fx-background-color: #5c427d; -fx-text-fill: white;" text="Edit Current BackUp">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="FontAwesome Regular" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow height="18.0" radius="8.5" width="18.0">
+                     <color>
+                        <Color red="0.24313725531101227" green="0.16470588743686676" blue="0.3176470696926117" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <Button fx:id="OnGoingBackup" layoutX="20.0" layoutY="224.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="270.0" style="-fx-background-color: #5c427d; -fx-text-fill: white;" text="Ongoing BackUps">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="FontAwesome Regular" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow height="18.0" radius="8.5" width="18.0">
+                     <color>
+                        <Color red="0.24313725531101227" green="0.16470588743686676" blue="0.3176470696926117" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <bottom>
+      <Pane prefHeight="98.0" prefWidth="806.0" style="-fx-background-color: #1e1729;" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: #151530;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #151530;" />
+            <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="642.0" prefWidth="617.0" style="-fx-background-color: #151530;">
+               <content>
+                  <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="1344.0" prefWidth="475.0" style="-fx-background-color: #151530;">
+                     <children>
+                        <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="78.0" prefWidth="532.0" style="-fx-background-color: gray;">
+                           <children>
+                              <Label prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="10.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="216.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="410.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="460.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="20.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="77.0" prefWidth="599.0" style="-fx-background-color: gray;">
+                           <children>
+                              <Label prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="10.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="216.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="410.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="460.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="98.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="77.0" prefWidth="599.0" style="-fx-background-color: gray;">
+                           <children>
+                              <Label prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="10.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="216.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="410.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="460.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="176.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="77.0" prefWidth="599.0" style="-fx-background-color: gray;">
+                           <children>
+                              <Label prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="10.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="216.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="410.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="460.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="253.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="77.0" prefWidth="599.0" style="-fx-background-color: gray;">
+                           <children>
+                              <Label prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="10.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="216.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="410.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="460.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="331.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="77.0" prefWidth="599.0" style="-fx-background-color: gray;">
+                           <children>
+                              <Label prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="10.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="216.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="410.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="460.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="408.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="77.0" prefWidth="599.0" style="-fx-background-color: gray;">
+                           <children>
+                              <Label prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="10.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="216.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="410.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="460.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="486.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="77.0" prefWidth="599.0" style="-fx-background-color: gray;">
+                           <children>
+                              <Label prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="10.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="216.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="410.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="460.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="564.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="77.0" prefWidth="599.0" style="-fx-background-color: gray;">
+                           <children>
+                              <Label prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="10.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="216.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="410.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="460.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="641.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="77.0" prefWidth="599.0" style="-fx-background-color: gray;">
+                           <children>
+                              <Label prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="10.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="216.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="410.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="460.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="812.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="77.0" prefWidth="599.0" style="-fx-background-color: gray;">
+                           <children>
+                              <Label prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="10.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="216.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="410.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="460.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="890.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="77.0" prefWidth="599.0" style="-fx-background-color: gray;">
+                           <children>
+                              <Label prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="10.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="216.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="410.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="460.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="968.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="77.0" prefWidth="599.0" style="-fx-background-color: gray;">
+                           <children>
+                              <Label prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="10.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="216.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="410.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="460.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="1045.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="77.0" prefWidth="599.0" style="-fx-background-color: gray;">
+                           <children>
+                              <Label prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="10.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="216.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="410.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="460.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="1123.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="77.0" prefWidth="599.0" style="-fx-background-color: gray;">
+                           <children>
+                              <Label prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="10.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="216.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="410.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="460.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="1200.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="77.0" prefWidth="599.0" style="-fx-background-color: gray;">
+                           <children>
+                              <Label prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="10.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="216.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="410.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="460.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="1278.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="77.0" prefWidth="599.0" style="-fx-background-color: gray;">
+                           <children>
+                              <Label prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="10.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="216.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="410.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                              <Label layoutX="460.0" layoutY="10.0" prefHeight="168.0" prefWidth="205.0" text="Label" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
